@@ -1,0 +1,74 @@
+@import url(//db.onlinewebfonts.com/c/67137b5f6928edc941186baaab5a664b?family=Lemon/Milk);
+@font-face {font-family: "Lemon/Milk"; src: url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.eot"); src: url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.woff") format("woff"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.svg#Lemon/Milk") format("svg"); }
+body {
+    background-color: #0087C2;    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.hamburger-img {
+    margin-left: 50px;
+    margin-top: 55px;
+    width: 75px;
+    height: 45px;
+}
+
+.mahiro-logo-img {
+    margin-right: 50px;
+    margin-top: 40px;
+    width: 175px;
+    height: 126px;
+}
+
+.main-contents {
+    position: relative;
+}
+
+.main-text > p {
+    margin-top: 180px;
+    margin-left: 280px;
+    font-family: "LEMON MILK";
+    font-weight: bold;
+    font-size: 75px;
+    letter-spacing: 0.12em;
+    text-align: left;
+    color: #fff;
+    text-shadow: -10px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+.horizon {
+    width: 850px;
+    height: 0;
+    background: transparent;
+    border: 5px solid #fff;
+    filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.16));
+    position: absolute;
+    top: 155px;
+    left: 150px;
+}
+
+.sub-texts > p {
+    font-family: "LEMON MILK";
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 0.22em;
+    text-align: left;
+    color: #fff;
+    text-shadow: -5px 5px 0px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    top: 175px;
+    left: 150px;
+}
+
+.icon {
+    display: flex;
+}
+
+.icons > img {
+    width: 61px;
+    height: 61px;
+    background: transparent;
+} 
+
