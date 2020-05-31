@@ -1,7 +1,19 @@
-@import url(//db.onlinewebfonts.com/c/67137b5f6928edc941186baaab5a664b?family=Lemon/Milk);
-@font-face {font-family: "Lemon/Milk"; src: url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.eot"); src: url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.woff") format("woff"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.svg#Lemon/Milk") format("svg"); }
+@charset "utf-8";
+
+html {
+    height: 100%;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
 body {
-    background-color: #0087C2;    
+    height: 100%;
+    background-color: #0087C2;  
+    text-align: center;  
+    color: #fff;
 }
 
 .header {
@@ -9,8 +21,9 @@ body {
     justify-content: space-between;
 }
 .hamburger-img {
-    margin-left: 50px;
+    cursor: pointer;
     margin-top: 55px;
+    margin-left: 50px;
     width: 75px;
     height: 45px;
 }
@@ -22,16 +35,47 @@ body {
     height: 126px;
 }
 
+#hide-list-wrapper {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 100%;
+    background: #9b9b9b;
+    box-shadow: 37px 3px 25px rgba(0, 0, 0, 0.16);
+    transform: translateX(-110%);
+    transition: all 0.6s; 
+}
+
+.open #hide-list-wrapper {
+    transform: translateX(0);
+}
+
+.side-contents-title {
+    font-size: 55px;
+}
+
+
 .main-contents {
     position: relative;
+    margin-top: -30px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .main-text > p {
+<<<<<<< HEAD
     margin-top: 0px;
     margin-left: 0px;
     font-family: "LEMON MILK";
+=======
+    position: absolute;
+    top: 100px;
+    left: 180px;
+>>>>>>> 2005b6c83e2036a247e99d1daa0ee2a2e11c93f8
     font-weight: bold;
-    font-size: 75px;
+    font-size: 100px;
     letter-spacing: 0.12em;
     text-align: center;
     color: #fff;
@@ -39,40 +83,76 @@ body {
 }
 
 .horizon {
-    width: 850px;
+    width: 950px;
     height: 0;
     background: transparent;
     border-bottom: 5px solid #fff;
     filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.16));
+<<<<<<< HEAD
 	position: absolute;
     top:115px;
     left: 220px;
 	
+=======
+    position: absolute;
+    top: 235px;
+    left: 170px;
+>>>>>>> 2005b6c83e2036a247e99d1daa0ee2a2e11c93f8
 }
 
 .sub-texts > p {
-    font-family: "LEMON MILK";
     font-weight: bold;
     font-size: 25px;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.15em;
     text-align: left;
     color: #fff;
     text-shadow: -5px 5px 0px rgba(0, 0, 0, 0.16);
     position: absolute;
-    top: 175px;
-    left: 150px;
+    top: 265px;
+    left: 175px;
 }
 
-.icon {
-    display: flex;
+.sign-wrapper {
+    position: absolute;
+    top: 270px;
+    left: 700px;
 }
 
-.icons > img {
-    width: 61px;
-    height: 61px;
-    background: transparent;
+.sign {
+    width: 450px;
+    height: 86px;
+}
+
+.icons {
+    position: absolute;
+    top: 350px;
+    left: 930px;
 } 
 
+.instagram {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    transform-origin: left top;
+} 
+
+.instagram:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.twitter {
+    margin-left: 20px;
+    width: 75px;
+    height: 75px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    transform-origin: left top;
+} 
+
+<<<<<<< HEAD
 .name > img {
     width: 534px;
     height: 110px;
@@ -84,3 +164,8 @@ body {
 	left: 100px;
 }
 
+=======
+.twitter:hover {
+    transform: scale(1.2, 1.2);
+}
+>>>>>>> 2005b6c83e2036a247e99d1daa0ee2a2e11c93f8
