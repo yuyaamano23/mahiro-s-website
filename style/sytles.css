@@ -1,11 +1,16 @@
 @charset "utf-8";
 
+html {
+    height: 100%;
+}
+
 * {
 	margin:0;
 	padding:0;
 }
 
 body {
+    height: 100%;
     background-color: #0087C2;    
 }
 
@@ -28,9 +33,24 @@ body {
     height: 126px;
 }
 
+.hide-list-wrapper {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 100%;
+    background: #9b9b9b;
+    box-shadow: 37px 3px 25px rgba(0, 0, 0, 0.16);
+}
+
+
 .main-contents {
     position: relative;
     margin-top: -30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
 }
 
 .main-text > p {
