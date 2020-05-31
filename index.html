@@ -6,6 +6,7 @@
     <title>MAHIRO'S website</title>
     <link rel="stylesheet" href="./style/sytles.css">
     <link rel="stylesheet" href="./style/sanitize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
     <div class="header">
@@ -16,9 +17,9 @@
             <img src="./img/mahiro.png" alt="まひろのロゴ" class="mahiro-logo-img">
         </div>
     </div>
-    <div class="hide-list-wrapper">
+    <div id="hide-list-wrapper">
         <div class="hamburger-blue">
-            <img src="./img/hamburger_blue.png" alt="ハンバーガメニュー青" class="hamburger-blue-img">
+            <img src="./img/hamburger_blue.png" alt="ハンバーガメニュー青" class="hamburger-img">
         </div>
         <p class="side-contents-title">Contents.</p>
         <ul>
@@ -54,5 +55,14 @@
             <img src="./img/twitter_icon.png" alt="ツイッターのアイコン" class="twitter">
         </div>
     </div>
+<script type="text/javascript">
+(function($) {
+    $(function () {
+        $('.hamburger-img').on('click', function() {
+            $('body').toggleClass('open');
+        });
+    });
+})(jQuery);
+</script>
 </body>
 </html>
