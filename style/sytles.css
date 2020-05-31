@@ -27,13 +27,13 @@ body {
 }
 
 .main-text > p {
-    margin-top: 180px;
-    margin-left: 280px;
+    margin-top: 0px;
+    margin-left: 0px;
     font-family: "LEMON MILK";
     font-weight: bold;
     font-size: 75px;
     letter-spacing: 0.12em;
-    text-align: left;
+    text-align: center;
     color: #fff;
     text-shadow: -10px 10px 0px rgba(0, 0, 0, 0.16);
 }
@@ -42,11 +42,12 @@ body {
     width: 850px;
     height: 0;
     background: transparent;
-    border: 5px solid #fff;
+    border-bottom: 5px solid #fff;
     filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.16));
-    position: absolute;
-    top: 155px;
-    left: 150px;
+	position: absolute;
+    top:115px;
+    left: 220px;
+	
 }
 
 .sub-texts > p {
@@ -71,4 +72,15 @@ body {
     height: 61px;
     background: transparent;
 } 
+
+.name > img {
+    width: 534px;
+    height: 110px;
+}
+
+.sub-texts {
+	font-size: 25px;
+	top: 100px;
+	left: 100px;
+}
 
