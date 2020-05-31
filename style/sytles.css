@@ -1,5 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/67137b5f6928edc941186baaab5a664b?family=Lemon/Milk);
-@font-face {font-family: "Lemon/Milk"; src: url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.eot"); src: url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.woff") format("woff"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.svg#Lemon/Milk") format("svg"); }
 body {
     background-color: #0087C2;    
 }
@@ -9,8 +7,8 @@ body {
     justify-content: space-between;
 }
 .hamburger-img {
-    margin-left: 50px;
     margin-top: 55px;
+    margin-left: 50px;
     width: 75px;
     height: 45px;
 }
@@ -29,7 +27,6 @@ body {
 .main-text > p {
     margin-top: 180px;
     margin-left: 280px;
-    font-family: "LEMON MILK";
     font-weight: bold;
     font-size: 75px;
     letter-spacing: 0.12em;
@@ -50,7 +47,6 @@ body {
 }
 
 .sub-texts > p {
-    font-family: "LEMON MILK";
     font-weight: bold;
     font-size: 25px;
     letter-spacing: 0.22em;
