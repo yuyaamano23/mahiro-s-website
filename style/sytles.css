@@ -14,6 +14,7 @@ body {
     justify-content: space-between;
 }
 .hamburger-img {
+    cursor: pointer;
     margin-top: 55px;
     margin-left: 50px;
     width: 75px;
@@ -29,6 +30,7 @@ body {
 
 .main-contents {
     position: relative;
+    margin-top: -30px;
 }
 
 .main-text > p {
@@ -68,7 +70,7 @@ body {
 
 .sign-wrapper {
     position: absolute;
-    top: 280px;
+    top: 270px;
     left: 700px;
 }
 
@@ -77,13 +79,23 @@ body {
     height: 86px;
 }
 
-.icon {
-    display: flex;
-}
-
-.icons > img {
-    width: 61px;
-    height: 61px;
-    background: transparent;
+.icons {
+    position: absolute;
+    top: 350px;
+    left: 930px;
 } 
 
+.instagram {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+} 
+
+.twitter {
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    cursor: pointer;
+} 
