@@ -32,11 +32,16 @@ body {
     height: 45px;
 }
 
+.hamburger-img:hover {
+    opacity: 0.7;
+}
+
 .mahiro-logo-img {
     margin-right: 50px;
     margin-top: 40px;
-    width: 175px;
-    height: 126px;
+    width: 100px;
+    height: 72px;
+    filter: saturate(0%);
 }
 
 #hide-list-wrapper {
@@ -95,13 +100,12 @@ body {
 }
 
 .main-contents {
-    position: relative;
-    margin: 0 auto;
-    margin-top: -30px;
-    text-align: center;
+    margin: 0px auto;
     width: 100%;
     transition: all 0.6s;
     transform: translateX(0);
+    max-width: 100%;
+
 }
 
 .open .main-contents {
@@ -123,11 +127,10 @@ body {
 .horizon {
     width: 900px;
     height: 0;
-    background: transparent;
-    border: 1px solid #fff;
+    border-bottom: 3px solid #fff;
     filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.16));
     position: absolute;
-    top: 235px;
+    top: 240px;
     left: 170px;
 }
 
@@ -188,3 +191,4 @@ body {
 .twitter:hover {
     transform: scale(1.2, 1.2);
 }
+
