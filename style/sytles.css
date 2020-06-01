@@ -18,6 +18,32 @@ body {
     font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
 }
 
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes img-wrap {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes bound {
+    0% {transform: translateX(0);}
+    45% {transform: translateX(10%);}
+    100% {transform: translateX(-170%);}
+}
+
+@keyframes loading-wrapper {
+    100% {transform: translateX(-100%);}
+}
+
 .loading-wrapper {
     background-color: #fff;
     position: fixed;
@@ -25,29 +51,14 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
+    animation-name: loading-wrapper;
+    animation-duration: 0.5s; /* アニメーション時間 */
+    animation-timing-function: ease-out; /* アニメーションさせるイージング */
+    animation-iteration-count: 1; /* 繰り返し回数 */
+    animation-delay: 6.3s; /* アニメーション開始させる時間 */
+    animation-direction: normal; /* 往復処理をするかどうか */
+    animation-fill-mode: forwards; /* アニメーション後のスタイルをどうするか */
 }
-
-@keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-@keyframes img-wrap {
-    100% {
-      transform: translateX(100%);
-    }
-  }
-
-@keyframes bound {
-    0% {transform: translateX(0);}
-    45% {transform: translateX(10%);}
-    100% {transform: translateX(-170%);}
-  }
-
 
 .loading-contents {
     text-align: center;
