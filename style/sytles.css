@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    overflow: hidden;
     height: 100%;
     background-color: #0087C2;  
     text-align: center;  
@@ -99,6 +100,12 @@ body {
     margin-top: -30px;
     text-align: center;
     width: 100%;
+    transition: all 0.6s;
+    transform: translateX(0);
+}
+
+.open .main-contents {
+    transform: translateX(15%);    
 }
 
 .main-text > p {
@@ -114,7 +121,7 @@ body {
 }
 
 .horizon {
-    width: 950px;
+    width: 900px;
     height: 0;
     background: transparent;
     border: 1px solid #fff;
@@ -139,12 +146,12 @@ body {
 .sign-wrapper {
     position: absolute;
     top: 270px;
-    left: 700px;
+    left: 680px;
 }
 
 .sign {
-    width: 450px;
-    height: 86px;
+    width: 400px;
+    height: 80px;
 }
 
 .icons {
