@@ -27,6 +27,21 @@ body {
     text-align: center;
 }
 
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes img-wrap {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
 .loading-contents {
     text-align: center;
     margin: 0 auto;
@@ -43,9 +58,16 @@ body {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
+    animation-name: fade-in;
+    animation-duration: 3s; /* アニメーション時間 */
+    animation-timing-function: ease-out; /* アニメーションさせるイージング */
+    animation-delay: 0s; /* アニメーション開始させる時間 */
+    animation-iteration-count: 1; /* 繰り返し回数 */
+    animation-direction: normal; /* 往復処理をするかどうか */
+    animation-fill-mode: forwards; /* アニメーション後のスタイルをどうするか */
 }
 
-.loading-img-follow {
+.loading-img-follow-wrapper {
     width: 270px;
     height: 50px;
     position: absolute;
@@ -54,6 +76,30 @@ body {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
+}
+
+.loading-img-follow-wrapper-middle {
+    overflow: hidden;
+    position: relative;
+}
+
+.loading-img-follow-wrapper-middle::before {
+    animation: img-wrap 2s cubic-bezier(.4, 0, .2, 1) forwards;
+    animation-delay: 1.7s; /* アニメーション開始させる時間 */
+    background: #fff;
+    bottom: 0;
+    content: '';
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.loading-img-follow {
+    width: 270px;
+    height: 50px;
 }
 
 .header {
