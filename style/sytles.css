@@ -83,6 +83,16 @@ body {
     list-style: none;
 }
 
+.side-ul > li {
+    transform-origin: left bottom;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.side-ul > li:hover {
+    transform: scale(1.2, 1.2);
+}
+
 .main-contents {
     position: relative;
     margin: 0 auto;
@@ -107,7 +117,7 @@ body {
     width: 950px;
     height: 0;
     background: transparent;
-    border: 5px solid #fff;
+    border: 1px solid #fff;
     filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.16));
     position: absolute;
     top: 235px;
