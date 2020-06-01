@@ -28,20 +28,19 @@ body {
     }
 }
 
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes img-wrap {
     100% {
         transform: translateX(100%);
     }
-}
-
-@keyframes bound {
-    0% {transform: translateX(0);}
-    45% {transform: translateX(10%);}
-    100% {transform: translateX(-170%);}
-}
-
-@keyframes loading-wrapper {
-    100% {transform: translateX(-100%);}
 }
 
 .loading-wrapper {
@@ -51,8 +50,8 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    animation-name: loading-wrapper;
-    animation-duration: 0.5s; /* アニメーション時間 */
+    animation-name: fade-out;
+    animation-duration: 1s; /* アニメーション時間 */
     animation-timing-function: ease-out; /* アニメーションさせるイージング */
     animation-iteration-count: 1; /* 繰り返し回数 */
     animation-delay: 6.3s; /* アニメーション開始させる時間 */
@@ -65,7 +64,7 @@ body {
     margin: 0 auto;
     margin-top: 250px;
     position: relative;
-    animation-name: bound;
+    animation-name: fade-out;
     animation-duration: 2s; /* アニメーション時間 */
     animation-timing-function: ease-out; /* アニメーションさせるイージング */
     animation-iteration-count: 1; /* 繰り返し回数 */
