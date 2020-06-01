@@ -14,16 +14,19 @@ body {
     background-color: #0087C2;  
     text-align: center;  
     color: #fff;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .hamburger-img {
     cursor: pointer;
-    margin-top: 55px;
-    margin-left: 50px;
+    position: absolute;
+    top: 50px;
+    left: 55px;
     width: 75px;
     height: 45px;
 }
@@ -52,24 +55,47 @@ body {
     transform: translateX(0);
 }
 
-.side-contents-title {
-    font-size: 55px;
+.hamburger-img-blue {
+    left: 240px;
 }
 
+.side-contents-title {
+    font-family: 'Arial Black','Arial Black',sans-serif;
+    position: absolute;
+    top: 115px;
+    left: 25px;
+    font-size: 40px;
+    letter-spacing: 0.12em;
+}
+
+.side-lists {
+    font-family: 'Arial Black','Arial Black',sans-serif;
+    text-align-last: left;
+    line-height: 2.7rem;
+    position: absolute;
+    top: 190px;
+    left: 45px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+.side-lists > ul {
+    list-style: none;
+}
 
 .main-contents {
     position: relative;
+    margin: 0 auto;
     margin-top: -30px;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 .main-text > p {
+    font-family: 'Arial Black','Arial Black',sans-serif;
     position: absolute;
     top: 100px;
     left: 180px;
     font-weight: bold;
-    font-size: 100px;
+    font-size: 90px;
     letter-spacing: 0.12em;
     text-align: left;
     color: #fff;
