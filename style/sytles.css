@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+html {
+    height: 100%;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+    overflow: hidden;
+    height: 100%;
+    background-color: #0087C2;  
+    text-align: center;  
+    color: #fff;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -5;
+    }
+}
+
+@keyframes img-wrap {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.loading-wrapper {
+    background-color: #fff;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    animation-name: fade-out;
+    animation-duration: 1s; /* アニメーション時間 */
+    animation-timing-function: ease-out; /* アニメーションさせるイージング */
+    animation-iteration-count: 1; /* 繰り返し回数 */
+    animation-delay: 6.3s; /* アニメーション開始させる時間 */
+    animation-direction: normal; /* 往復処理をするかどうか */
+    animation-fill-mode: forwards; /* アニメーション後のスタイルをどうするか */
+}
+
+.loading-contents {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 250px;
+    position: relative;
+    animation-name: fade-out;
+    animation-duration: 2s; /* アニメーション時間 */
+    animation-timing-function: ease-out; /* アニメーションさせるイージング */
+    animation-iteration-count: 1; /* 繰り返し回数 */
+    animation-delay: 4.5s; /* アニメーション開始させる時間 */
+    animation-direction: normal; /* 往復処理をするかどうか */
+    animation-fill-mode: forwards; /* アニメーション後のスタイルをどうするか */
+}
+
+.loading-img-mk {
+    width: 270px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    animation-name: fade-in;
+    animation-duration: 3s; /* アニメーション時間 */
+    animation-timing-function: ease-out; /* アニメーションさせるイージング */
+    animation-delay: 0s; /* アニメーション開始させる時間 */
+    animation-iteration-count: 1; /* 繰り返し回数 */
+    animation-direction: normal; /* 往復処理をするかどうか */
+    animation-fill-mode: forwards; /* アニメーション後のスタイルをどうするか */
+}
+
+.loading-img-follow-wrapper {
+    width: 270px;
+    height: 50px;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
+.loading-img-follow-wrapper-middle {
+    overflow: hidden;
+    position: relative;
+}
+
+.loading-img-follow-wrapper-middle::before {
+    animation: img-wrap 2s cubic-bezier(.4, 0, .2, 1) forwards;
+    animation-delay: 1.7s; /* アニメーション開始させる時間 */
+    background: #fff;
+    bottom: 0;
+    content: '';
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.loading-img-follow {
+    width: 270px;
+    height: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.hamburger-img {
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    width: 75px;
+    height: 45px;
+}
+
+.mahiro-logo-img {
+    margin-right: 50px;
+    margin-top: 40px;
+    width: 175px;
+    height: 126px;
+}
+
+#hide-list-wrapper {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 100%;
+    background: #9b9b9b;
+    box-shadow: 37px 3px 25px rgba(0, 0, 0, 0.16);
+    transform: translateX(-110%);
+    transition: all 0.6s; 
+}
+
+.open #hide-list-wrapper {
+    transform: translateX(0);
+}
+
+.hamburger-img-blue {
+    left: 240px;
+}
+
+.side-contents-title {
+    font-family: 'Arial Black','Arial Black',sans-serif;
+    position: absolute;
+    top: 115px;
+    left: 25px;
+    font-size: 40px;
+    letter-spacing: 0.12em;
+}
+
+.side-lists {
+    font-family: 'Arial Black','Arial Black',sans-serif;
+    text-align-last: left;
+    line-height: 2.9rem;
+    position: absolute;
+    top: 190px;
+    left: 45px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+.side-lists > ul {
+    list-style: none;
+}
+
+.side-ul > li {
+    transform-origin: left bottom;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.side-ul > li:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.main-contents {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -30px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.6s;
+    transform: translateX(0);
+}
+
+.open .main-contents {
+    transform: translateX(15%);    
+}
+
+.main-text > p {
+    font-family: 'Arial Black','Arial Black',sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 180px;
+    font-weight: bold;
+    font-size: 90px;
+    letter-spacing: 0.12em;
+    color: #fff;
+    text-shadow: -10px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+.horizon {
+    width: 900px;
+    height: 0;
+    background: transparent;
+    border: 1px solid #fff;
+    filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.16));
+    position: absolute;
+    top: 235px;
+    left: 170px;
+}
+
+.sub-texts > p {
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    color: #fff;
+    text-shadow: -5px 5px 0px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    top: 265px;
+    left: 175px;
+}
+
+.sign-wrapper {
+    position: absolute;
+    top: 270px;
+    left: 680px;
+}
+
+.sign {
+    width: 400px;
+    height: 80px;
+}
+
+.icons {
+    position: absolute;
+    top: 350px;
+    left: 930px;
+} 
+
+.instagram {
+    width: 37px;
+    height: 37px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    transform-origin: left top;
+    filter: drop-shadow(-5px 5px 0px rgba(0, 0, 0, 0.16));
+} 
+
+.instagram:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.twitter {
+    margin-left: 20px;
+    width: 75px;
+    height: 75px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    transform-origin: left top;
+    filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.16));
+} 
+
+.twitter:hover {
+    transform: scale(1.2, 1.2);
+}
