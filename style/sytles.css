@@ -131,6 +131,7 @@ body {
     width: 100%;
     text-align: center;
     margin: 0 auto; 
+    position: relative;
 }
 
 .header {
@@ -214,9 +215,12 @@ body {
 }
 
 .main-contents {
-    position: relative;
+    width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
     margin: 0 auto;
-    margin-top: -30px;
+    margin-top: 100px;
     text-align: center;
     transition: all 0.6s;
     transform: translateX(0);
@@ -250,6 +254,7 @@ body {
 }
 
 .sub-texts > p {
+    width: 500px;
     font-weight: bold;
     font-size: 25px;
     letter-spacing: 0.15em;
