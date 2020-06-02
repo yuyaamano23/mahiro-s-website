@@ -127,6 +127,12 @@ body {
     height: 50px;
 }
 
+.main-wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto; 
+}
+
 .header {
     display: flex;
     justify-content: space-between;
