@@ -195,7 +195,6 @@ body {
 .side-lists {
     font-family: 'Arial Black','Arial Black',sans-serif;
     text-align-last: left;
-    line-height: 5px;
     position: absolute;
     top: 190px;
     left: 45px;
@@ -211,6 +210,7 @@ body {
     transform-origin: left bottom;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 13px;
 }
 
 .side-ul > li:hover {
