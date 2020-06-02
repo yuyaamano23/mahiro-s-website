@@ -66,6 +66,7 @@ body {
     text-align: center;
     margin: 0 auto;
     margin-top: 250px;
+    vertical-align: middle;
     position: relative;
     animation-name: fade-out;
     animation-duration: 2s; /* アニメーション時間 */
@@ -194,7 +195,7 @@ body {
 .side-lists {
     font-family: 'Arial Black','Arial Black',sans-serif;
     text-align-last: left;
-    line-height: 2.9rem;
+    line-height: 5px;
     position: absolute;
     top: 190px;
     left: 45px;
@@ -224,7 +225,7 @@ body {
     -webkit-transform : translate(-50%,-50%);
     transform : translate(-50%,-50%);
     margin: 0 auto;
-    margin-top: -40px;
+    margin-top: -60px;
     text-align: center;
     transition: all 0.6s;
     transform: translateX(0);
