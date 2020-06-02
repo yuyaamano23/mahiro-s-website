@@ -219,8 +219,10 @@ body {
 .main-contents {
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 20%;
     left: 0;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
     margin: 0 auto;
     margin-top: 100px;
     text-align: center;
