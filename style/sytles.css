@@ -15,7 +15,8 @@ body {
     display: block;
     height: 100%;
     width: auto;
-    background-color: #0087C2;  
+    background-blend-mode: multiply;
+    background:#0087C2 url(../img/02-whitepaper.png);
     text-align: center;  
     color: #fff;
     font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
@@ -232,13 +233,17 @@ body {
     -webkit-transform : translate(-50%,-50%);
     transform : translate(-50%,-50%);
     margin: 0 auto;
-    margin-top: 250px;
+    margin-top: 230px;
 
     text-align: center;
     transition: all 0.6s;
     transform: translateX(0);
     display: inline-block;
-
+    background-blend-mode: multiply;
+    background:rgb(0, 158, 226) url(../img/02-whitepaper.png);
+    padding: 40px 50px 20px 70px;
+    box-shadow: -30px 30px 40px rgba(0, 0, 0, 0.4);
+    
 }
 
 .open .main-contents {
